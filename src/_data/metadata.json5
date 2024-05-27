@@ -1,0 +1,8 @@
+{
+    base: "/",
+    lange: "en",
+    locale: "en-US",
+    title: "Blog",
+    description: "",
+    bio: "",
+}

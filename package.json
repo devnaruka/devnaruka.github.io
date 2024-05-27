@@ -1,0 +1,35 @@
+{
+  "name": "devnaruka-github-io",
+  "version": "1.0.0",
+  "description": "Dev Naruka's blog!",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "clean": "del-cli -f -v dist",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:11ty": "DEBUG=Vite* eleventy --incremental --quiet --serve",
+    "dev:tailwind": "npx tailwindcss -i styles/tailwind.css -c tailwind.config.js -o dist/assets/css/style.css --watch",
+    "build": "npm-run-all --parallel build:*",
+    "build:11ty": "ELEVENTY_PRODUCTION=true eleventy --incremental --quiet",
+    "build:tailwind": "NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c tailwind.config.js -o dist/assets/css/style.css --minify"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@slinkity/vue": "^1.0.0",
+    "alpinejs": "^3.14.0",
+    "autoprefixer": "^10.4.19",
+    "del-cli": "^5.1.0",
+    "html-minifier": "^4.0.0",
+    "json5": "^2.2.3",
+    "luxon": "^3.4.4",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.57.1",
+    "slinkity": "^1.0.0-canary.0",
+    "tailwindcss": "^3.4.3",
+    "vue": "^3.4.27"
+  }
+}
