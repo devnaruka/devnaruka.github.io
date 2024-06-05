@@ -2,7 +2,11 @@
     base: "/",
     lange: "en",
     locale: "en-US",
-    title: "Blog",
+    title: "Dev Naruka",
     description: "",
+    site: "DevNaruka.com",
+    avatar: "https://source.unsplash.com/100x100/?portrait",
+    header: "Dev Naruka",
+    subheader: "Welcome to my blog!",
     bio: "",
 }
